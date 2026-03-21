@@ -44,7 +44,7 @@ nav a:hover{
 }
 
 #btn-entrar {
-    display: inline-flex; /* importante */
+    display: inline-flex; 
     background-color: #DA0707;
     color: aliceblue;
     border-radius: 100px;
@@ -52,8 +52,8 @@ nav a:hover{
     justify-content: center;
     align-items: center;
 
-    padding: 8px 18px; 
-    font-size: 14px;
+    padding: 14px 28px; 
+    font-size: 16px;
 
     line-height: normal;
     transition: transform 0.2s ease; 
