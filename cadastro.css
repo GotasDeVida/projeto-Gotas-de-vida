@@ -79,13 +79,13 @@ nav ul li a:hover {
 }
 
 .titulo-dourado {
-    color: #c5a059; /* Cor aproximada do dourado na imagem */
+    color: #c5a059; 
     font-size: 2.8rem;
     margin-top: -10px;
 }
 
 .card-cadastro {
-    background-color: #fdf4f4; /* Fundo rosado claro */
+    background-color: #fdf4f4; 
     padding: 40px;
     border-radius: 40px;
     width: 100%;
