@@ -68,85 +68,76 @@ nav a:hover {
     cursor: pointer;
 }
 
-body {
-    background-color: #fff;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 60px;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.texto {
-    max-width: 520px;
-}
-
-.imagem img {
-    width: 420px;
-    border-radius: 20px;
-}
-
-.plata {
+/*sobre*/
+.sobre{
     color: #DA0707;
-    background-color: #FEEAEA;
+    background-color: #feeaea;
     padding: 5px 10px;
     border-radius: 10px;
     font-weight: 500;
     display: inline-block;
     margin-bottom: 30px;
+    margin-left: 270px;
+    
 }
 
-section h1 {
-    font-size: 56px;
-    line-height: 1.1;
-    margin-bottom: 30px;
+/*destaque*/
+.destaque{
+    color: #da0707;
 }
 
-section h3 {
-    font-weight: 400;
-    line-height: 1.5;
+.container{
+    text-align: center;
+    margin-top: 80px;
 }
 
-.sublinhavermelho span {
-    color: #DA0707;
+.container h2{
+    font-size: 80px;
+    font-weight: bold;
 }
 
-.botoes {
-    margin-top: 50px;
+.container p{
+    margin-top: 40px;
+    color: #000000;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+.cards{
     display: flex;
-    gap: 15px;
-    transition: transform 0.3s ease;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 80px;
 }
 
-button:first-child:hover {
-    transform: scale(1.1);
+.card{
+    background-color: rgba(218,7,7,0.08);
+    padding: 45px;
+    border-radius: 15px;
+    width: 290px;
+    text-align: center;
 }
 
-button:last-child:hover {
-    transform: scale(1.1);
+.card h3{
+    color: #da0707;
+    font-size: 30px;
 }
 
-.botoes button {
-    padding: 10px 18px;
-    border-radius: 8px;
-    border: none;
+.card p{
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 35px;
     cursor: pointer;
 }
 
-.botoes button:first-child {
-    background-color: #DA0707;
-    color: white;
-}
-
-.botoes button:last-child {
-    background-color: transparent;
-    border: 1px solid #DA0707;
-    color: #DA0707;
+.logo-area img{
+    width: 50px;
+    height: auto;
 }
