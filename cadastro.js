@@ -20,6 +20,6 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     
     alert(`Olá ${nome}! Seu cadastro no Gotas de Vida foi simulado com sucesso.`);
     
-    // Limpa o formulário
+    
     this.reset();
 });
