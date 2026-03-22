@@ -1,0 +1,74 @@
+/*sobre*/
+.sobre{
+    color: #DA0707;
+    background-color: #feeaea;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 270px;
+    
+}
+
+/*destaque*/
+.destaque{
+    color: #da0707;
+}
+
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container h2{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.container p{
+    margin-top: 40px;
+    color: #000000;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.card{
+    background-color: rgba(218,7,7,0.08);
+    padding: 45px;
+    border-radius: 15px;
+    width: 290px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card h3{
+    color: #da0707;
+    font-size: 30px;
+}
+
+.card p{
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    cursor: pointer;
+}
+
+.logo-area img{
+    width: 50px;
+    height: auto;
+}
