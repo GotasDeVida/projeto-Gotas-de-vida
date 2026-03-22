@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #d9d9d933;
+    border-bottom: 1px solid #dddddd00;
+    margin-bottom: 20px;
+}
+
+header div img {
+    width: 45px;
+    height: 45px;
+}
+
+header div h1,
+header div h3 {
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #DA0707;
+}
+
+#btn-entrar {
+    display: inline-flex;
+    background-color: #DA0707;
+    color: aliceblue;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 18px;
+    font-size: 14px;
+    line-height: normal;
+    transition: transform 0.2s ease;
+}
+
+#btn-entrar:hover {
+    transform: scale(1.1);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    cursor: pointer;
+}
+
+/*sobre*/
+.sobre{
+    color: #DA0707;
+    background-color: #feeaea;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 270px;
+    
+}
+
+/*destaque*/
+.destaque{
+    color: #da0707;
+}
+
+.container{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container h2{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.container p{
+    margin-top: 40px;
+    color: #000000;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 80px;
+}
+
+.card{
+    background-color: rgba(218,7,7,0.08);
+    padding: 45px;
+    border-radius: 15px;
+    width: 290px;
+    text-align: center;
+}
+
+.card h3{
+    color: #da0707;
+    font-size: 30px;
+}
+
+.card p{
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    cursor: pointer;
+}
+
+.logo-area img{
+    width: 50px;
+    height: auto;
+}
