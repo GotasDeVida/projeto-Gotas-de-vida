@@ -10,56 +10,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    padding: 15px 50px;
-    border-bottom: 1px solid #eee;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-header strong {
-    display: block;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-.logo-header span {
-    font-size: 0.75rem;
-    color: #888;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #555;
-    font-size: 0.85rem;
-    font-weight: 500;
-}
-
-nav ul li a:hover {
-    color: #b30000; 
-    transition: 0.3s; 
-}
-
-.btn-entrar {
-    background-color: #b30000;
-    color: white;
-    border: none;
-    padding: 8px 25px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
 .container {
     display: flex;
     min-height: 85vh;
@@ -78,14 +28,8 @@ nav ul li a:hover {
     width: 300px;
 }
 
-.titulo-dourado {
-    color: #c5a059; 
-    font-size: 2.8rem;
-    margin-top: -10px;
-}
-
 .card-cadastro {
-    background-color: #fdf4f4; 
+    background-color: #FEEAEA; 
     padding: 40px;
     border-radius: 40px;
     width: 100%;
@@ -111,10 +55,20 @@ input {
     border: 1px solid #ddd;
     border-radius: 10px;
     outline-color: #b30000;
+
+    background-color: rgba(217, 217, 217, 0.29);
+}
+
+input::placeholder {
+    color: #777;
+}
+
+input:focus {
+    border: 1px solid #DA0707;
 }
 
 .btn-cadastrar {
-    background-color: #b30000;
+    background-color: #DA0707;
     color: white;
     border: none;
     padding: 15px;
@@ -126,6 +80,10 @@ input {
     transition: transform 0.2s;
 }
 
+.btn-cadastrar:hover {
+    transform: scale(1.05);
+}
+
 .btn-cadastrar:active {
-    transform: scale(0.98);
+    transform: scale(0.97);
 }

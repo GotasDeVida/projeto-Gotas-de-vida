@@ -15,10 +15,9 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
         erroMsg.style.display = 'none';
     }
 
-   
     console.log("Dados capturados:", { nome, email, senha });
     
-    alert(`Olá ${nome}! Seu cadastro no Gotas de Vida foi simulado com sucesso.`);
+    alert(`Olá ${nome}! Seu cadastro no Gotas de Vida foi concluído com sucesso.`);
     
     
     this.reset();
