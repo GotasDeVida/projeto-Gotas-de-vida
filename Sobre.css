@@ -16,17 +16,17 @@
     color: #da0707;
 }
 
-.container{
+.container1{
     text-align: center;
     margin-top: 20px;
 }
 
-.container h2{
+.container1 h2{
     font-size: 55px;
     font-weight: bold;
 }
 
-.container p{
+.container1 p{
     margin-top: 40px;
     color: #000000;
     max-width: 600px;
@@ -83,12 +83,12 @@
         margin: 20px auto;
     }
 
-    .container h2 {
+    .container1 h2 {
         font-size: 32px;
         padding: 0 10px;
     }
 
-    .container p {
+    .container1 p {
         font-size: 16px;
         padding: 0 15px;
         margin-top: 20px;
