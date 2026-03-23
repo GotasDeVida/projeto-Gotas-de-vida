@@ -25,16 +25,16 @@
             <a href="./Sobre.html">Sobre</a>
             <a href="./pqdoar.html">Porque doar</a>
             <a href="">Cuidados</a>
-            <a href="comodoar.html">Como doar</a>
+            <a href="./comodoar.html">Como doar</a>
             <a href="./hemocentros.html">Hemocentros</a>
-            <a href="" id="btn-entrar"> Entrar </a>
+            <a href="./entrar.html" id="btn-entrar"> Entrar </a>
         </nav>
     </header>
 
     <main class="container">
         <div class="hero-section">
             <div class="logo-central">
-                <img src="/imagens/logomarca.png" alt="Logo Gotas de Vida" class="main-logo">
+                <img src="./imagens/logomarca.png" alt="Logo Gotas de Vida" class="main-logo">
             </div>
         </div>
 
@@ -45,6 +45,11 @@
                 
                 <form id="formCadastro">
                     <input type="text" id="nome" placeholder="Insira nome completo" required>
+                        <select id="sexo" required>
+                            <option value="">Selecione seu sexo biológico: </option>
+                            <option value="Fem">Feminino</option>
+                            <option value="Mas">Masculino</option>
+                        </select>
                     <input type="email" id="email" placeholder="Insira @email.com" required>
                     <input type="password" id="senha" placeholder="Crie uma senha" required>
                     <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required>
@@ -56,6 +61,6 @@
         </div>
     </main>
 
-    <script src="cadastro.js"></script>
+    <script src="./cadastro.js"></script>
 </body>
 </html>
