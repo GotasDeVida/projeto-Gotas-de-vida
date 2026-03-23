@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.logo-header span {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #b30000; 
+    transition: 0.3s; 
+}
+
+.btn-entrar {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    min-height: 85vh;
+    padding: 0 8%;
+    align-items: center;
+}
+
+.hero-section, .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-logo {
+    width: 300px;
+}
+
+.titulo-dourado {
+    color: #c5a059; 
+    font-size: 2.8rem;
+    margin-top: -10px;
+}
+
+.card-cadastro {
+    background-color: #fdf4f4; 
+    padding: 40px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card-cadastro h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline-color: #b30000;
+}
+
+.btn-cadastrar {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-cadastrar:active {
+    transform: scale(0.98);
+}
