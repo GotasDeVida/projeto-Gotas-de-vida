@@ -175,3 +175,98 @@ button:last-child:hover {
     border: 1px solid #DA0707;
     color: #DA0707;
 }
+
+/* =================(até 768px) ================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo-area {
+        gap: 15px;
+    }
+
+    .logo-area h1 {
+        font-size: 18px;
+    }
+
+    .logo-area h3 {
+        font-size: 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #btn-entrar {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .texto {
+        max-width: 100%;
+    }
+
+    section h1 {
+        font-size: 32px;
+    }
+
+    section h3 {
+        font-size: 14px;
+    }
+
+    .imagem img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ================= (769px até 1024px) ================= */
+@media (max-width: 1024px) {
+
+    .hero {
+        gap: 30px;
+    }
+
+    section h1 {
+        font-size: 42px;
+    }
+
+    .imagem img {
+        width: 320px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+}

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    min-height: 85vh;
+    padding: 0 8%;
+    align-items: center;
+}
+
+.hero-section, .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-logo {
+    width: 300px;
+}
+
+.card-cadastro {
+    background-color: #FEEAEA; 
+    padding: 40px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card-cadastro h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline-color: #b30000;
+
+    background-color: rgba(217, 217, 217, 0.29);
+}
+
+input::placeholder {
+    color: #777;
+}
+
+input:focus {
+    border: 1px solid #DA0707;
+}
+
+.btn-cadastrar {
+    background-color: #DA0707;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-cadastrar:hover {
+    transform: scale(1.05);
+}
+
+.btn-cadastrar:active {
+    transform: scale(0.97);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .main-logo {
+        width: 180px;
+    }
+
+    .card-cadastro {
+        padding: 25px;
+        border-radius: 20px;
+        max-width: 100%;
+    }
+
+    .card-cadastro h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .card-cadastro p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    input,
+    select {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn-cadastrar {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #mensagemErro {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .main-logo {
+        width: 220px;
+    }
+
+    .card-cadastro {
+        max-width: 380px;
+    }
+}

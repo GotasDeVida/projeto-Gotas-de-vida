@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Usuário</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="area.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="./imagens/logomarca.png" alt="logo">
+
+            <div>
+                <h1>Gotas de Vida</h1>
+                <h3>Doe Sangue, Salve vidas</h3>
+            </div>
+        </div>
+
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./Sobre.html">Sobre</a>
+            <a href="./pqdoar.html">Por que doar</a>
+            <a href="">Cuidados</a>
+            <a href="./comodoar.html">Como doar</a>
+            <a href="./hemocentros.html">Hemocentros</a>
+            <a href="./entrar.html" id="btn-entrar"> Entrar </a>
+        </nav>
+    </header>
+
+    <main class="container-area">
+
+        <div class="card-area">
+            <h2 id="bemVindo"></h2>
+
+            <p>Descubra quando você poderá doar novamente</p>
+
+            <label>Data da última doação:</label>
+            <input type="date" id="dataDoacao">
+
+            <button onclick="calcular()">Calcular próxima doação</button>
+
+            <p id="resultado"></p>
+        </div>
+    </main>
+
+
+    <script src="area.js"></script>
+</body>
+
+</html>

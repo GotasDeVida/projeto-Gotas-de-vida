@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotas de Vida - Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="./imagens/logomarca.png" alt="logo">
+
+            <div>
+                <h1>Gotas de Vida</h1>
+                <h3>Doe Sangue, Salve vidas</h3>
+            </div>
+        </div>
+
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./Sobre.html">Sobre</a>
+            <a href="./pqdoar.html">Porque doar</a>
+            <a href="">Cuidados</a>
+            <a href="./comodoar.html">Como doar</a>
+            <a href="./hemocentros.html">Hemocentros</a>
+            <a href="./entrar.html" id="btn-entrar"> Entrar </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="hero-section">
+            <div class="logo-central">
+                <img src="./imagens/logomarca.png" alt="Logo Gotas de Vida" class="main-logo">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="card-cadastro">
+                <h2>Criar conta na Gotas de Vida</h2>
+                <p>Preencha os campos abaixo para começar</p>
+                
+                <form id="formCadastro">
+                    <input type="text" id="nome" placeholder="Insira nome completo" required>
+                        <select id="sexo" required>
+                            <option value="">Selecione seu sexo biológico: </option>
+                            <option value="Fem">Feminino</option>
+                            <option value="Mas">Masculino</option>
+                        </select>
+                    <input type="email" id="email" placeholder="Insira @email.com" required>
+                    <input type="password" id="senha" placeholder="Crie uma senha" required>
+                    <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required>
+                    <p id="mensagemErro" style="color: red; margin-top: 10px; font-size: 15px; display: none;"><strong>As senhas não coincidem!</strong></p>
+                    <button type="submit" class="btn-cadastrar">Cadastre-se</button>
+                </form>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="./cadastro.js"></script>
+</body>
+</html>
