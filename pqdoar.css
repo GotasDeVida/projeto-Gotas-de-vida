@@ -143,3 +143,85 @@ main{
     color: rgb(0, 0, 0);
     font-size: 16px;
 }
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    main {
+        margin: 10px;
+    }
+
+    .plata {
+        display: block;
+        text-align: center;
+        margin: 0 auto 15px;
+        width: fit-content;
+        padding: 5px 12px;
+    }
+
+    .titulo {
+        font-size: 32px;
+        padding: 0 10px;
+    }
+
+    .container-box {
+        gap: 20px;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 280px;
+        padding: 20px;
+    }
+
+    .box img {
+        width: 60px;
+    }
+
+    .box h3 {
+        font-size: 18px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .box-2 {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .box-2 h2 {
+        font-size: 20px;
+    }
+
+    .box-2 p {
+        font-size: 14px;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .container-box {
+        gap: 30px;
+    }
+
+    .box {
+        width: 220px;
+    }
+
+    .box-2 {
+        width: 80%;
+    }
+}
