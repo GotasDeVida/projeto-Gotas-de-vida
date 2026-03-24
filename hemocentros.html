@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemocentros</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="hemocentros.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./imagens/favicon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="hemocentros.css">
+    <link rel="shortcut icon" href="./imagens/favicon-logo.png">
 </head>
 
 <body>
@@ -15,7 +15,6 @@
     <header>
         <div class="logo-area">
             <img src="./imagens/logomarca.png" alt="logo">
-
             <div>
                 <h1>Gotas de Vida</h1>
                 <h3>Doe Sangue, Salve vidas</h3>
@@ -25,169 +24,147 @@
         <nav>
             <a href="./index.html">Inicio</a>
             <a href="./Sobre.html">Sobre</a>
-            <a href="./pqdoar.html">Porque doar</a>
+            <a href="./pqdoar.html">Por que doar</a>
             <a href="./cuidados.html">Cuidados</a>
             <a href="./comodoar.html">Como doar</a>
             <a href="./hemocentros.html" class="active">Hemocentros</a>
-            <a href="./entrar.html" id="btn-entrar"> Entrar </a>
+            <a href="./entrar.html" id="btn-entrar">Entrar</a>
         </nav>
     </header>
 
     <main>
-        <h5 class="plata">Encontre o hemocentro perto de você</h5>
-        <div>
-            <h2>Lista de Hemocentros</h2>
-        </div>
-        <div class="container">
+
+        <div class="plata">Encontre o hemocentro perto de você</div>
+        <h2>Lista de Hemocentros</h2>
+        <div class="container hemo-layout">
+
+            <!-- LISTA -->
             <div class="lista">
 
                 <div class="card"
                     onclick="selecionar(this, 'Fundação Pró-Sangue Hemocentro de São Paulo, Av. Dr. Enéas Carvalho de Aguiar, 155, São Paulo, SP')">
                     <h3>Fundação Pró-Sangue – Posto Clínicas</h3>
                     <p>Endereço: Av. Dr. Enéas Carvalho de Aguiar, 155 - 1° andar - Cerqueira César - SP</p>
-                    <p>Número: (11) 4573-7800</p>
-                    <a class="btn-agendar" href="https://www.prosangue.sp.gov.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 4573-7800</p> <a class="btn-agendar" href="https://www.prosangue.sp.gov.br" target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hemocentro da Unicamp, Campinas, SP')">
                     <h3>Hemocentro Campinas</h3>
                     <p>Endereço: Universidade Estadual de Campinas - R. Carlos Chagas, 480 - Cidade Universitária - SP
                     </p>
-                    <p>Número: 0800 722 8432</p>
-                    <a class="btn-agendar" href="https://hemocentro.unifesp.br/agendamento-de-doacao/"
-                        target="_blank">Agendar Doação</a>
+                    <p>Número: 0800 722 8432</p> <a class="btn-agendar"
+                        href="https://hemocentro.unifesp.br/agendamento-de-doacao/" target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hemocentro de Sorocaba, Sorocaba, SP')">
                     <h3>Hemocentro Sorocaba</h3>
                     <p>Endereço: Av. Comendador Pereira Inácio, 564 - Jardim Vergueiro - SP</p>
-                    <p>Número: (15) 3224-2930</p>
-                    <a class="btn-agendar" href="https://saude.sorocaba.sp.gov.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (15) 3224-2930</p> <a class="btn-agendar" href="https://saude.sorocaba.sp.gov.br"
+                        target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hemocentro São José dos Campos, SP')">
                     <h3>Hemocentro SJC</h3>
                     <p>Endereço: R. Antônio Saes, 425 - Centro - SP</p>
-                    <p>Número: (12) 3519-3766</p>
-                    <a class="btn-agendar" href="https://www.sjc.sp.gov.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (12) 3519-3766</p> <a class="btn-agendar" href="https://www.sjc.sp.gov.br"
+                        target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Fundação Pró-Sangue – Posto Dante Pazzanese')">
                     <h3>Fundação Pró-Sangue – Posto Dante Pazzanese</h3>
                     <p>Endereço: Av. Dr. Dante Pazzanese, 500 – Ibirapuera, São Paulo - SP</p>
-                    <p>Número: (11) 4573-7800</p>
-                    <a class="btn-agendar" href="https://www.prosangue.sp.gov.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 4573-7800</p> <a class="btn-agendar" href="https://www.prosangue.sp.gov.br"
+                        target="_blank">Agendar Doação</a>
                 </div>
+
                 <div class="card" onclick="selecionar(this, 'Banco de Sangue Paulista – Vila Nova Conceição')">
                     <h3>Banco de Sangue Paulista – Vila Nova Conceição</h3>
                     <p>Endereço: R. Dr. Alceu de Campos Rodrigues, 46 – Vila Nova Conceição, São Paulo - SP</p>
-                    <p>Número: (11) 3048-9800</p>
-                    <a class="btn-agendar" href="https://bancodesanguepaulista.com.br" target="_blank">Agendar
-                        Doação</a>
+                    <p>Número: (11) 3048-9800</p> <a class="btn-agendar" href="https://bancodesanguepaulista.com.br"
+                        target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Banco de Sangue Paulista – Santo Amaro')">
                     <h3>Banco de Sangue Paulista – Santo Amaro</h3>
                     <p>Endereço: R. Iguatinga, 382 – Santo Amaro, São Paulo - SP</p>
-                    <p>Número: (11) 5523-7788</p>
-                    <a class="btn-agendar" href="https://bancodesanguepaulista.com.br" target="_blank">Agendar
-                        Doação</a>
+                    <p>Número: (11) 5523-7788</p> <a class="btn-agendar" href="https://bancodesanguepaulista.com.br"
+                        target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hospital Beneficência Portuguesa – Banco de Sangue')">
                     <h3>Hospital Beneficência Portuguesa – Banco de Sangue</h3>
                     <p>Endereço: R. Maestro Cardim, 769 – Bela Vista, São Paulo - SP</p>
-                    <p>Número: (11) 3505-1000</p>
-                    <a class="btn-agendar" href="https://www.bp.org.br/doacao-de-sangue" target="_blank">Agendar
-                        Doação</a>
+                    <p>Número: (11) 3505-1000</p> <a class="btn-agendar" href="https://www.bp.org.br/doacao-de-sangue"
+                        target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hospital AC Camargo – Banco de Sangue')">
                     <h3>Hospital AC Camargo – Banco de Sangue</h3>
                     <p>Endereço: R. Prof. Antônio Prudente, 211 – Liberdade, São Paulo - SP</p>
-                    <p>Número: (11) 2189-5000</p>
-                    <a class="btn-agendar" href="https://www.accamargo.org.br/doacao-de-sangue" target="_blank">Agendar
-                        Doação</a>
+                    <p>Número: (11) 2189-5000</p> <a class="btn-agendar"
+                        href="https://www.accamargo.org.br/doacao-de-sangue" target="_blank">Agendar Doação</a>
                 </div>
+
                 <div class="card" onclick="selecionar(this, 'Fundação Pró-Sangue – Posto Mandaqui')">
                     <h3>Fundação Pró-Sangue – Posto Mandaqui</h3>
                     <p>Endereço: R. Voluntários da Pátria, 4227 – Mandaqui, São Paulo - SP</p>
-                    <p>Número: (11) 4573-7800</p>
-                    <a class="btn-agendar" href="https://www.prosangue.sp.gov.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 4573-7800</p> <a class="btn-agendar" href="https://www.prosangue.sp.gov.br"
+                        target="_blank">Agendar Doação</a>
                 </div>
+
                 <div class="card" onclick="selecionar(this, 'Hemocentro da UNIFESP')">
                     <h3>Hemocentro da UNIFESP</h3>
                     <p>Endereço: R. Dr. Diogo de Faria, 824 – Vila Clementino, São Paulo - SP</p>
-                    <p>Número: (11) 5576-4240</p>
-                    <a class="btn-agendar" href="https://hemocentro.unifesp.br/agendamento-de-doacao/"
-                        target="_blank">Agendar
-                        Doação</a>
+                    <p>Número: (11) 5576-4240</p> <a class="btn-agendar" href="https://hemocentro.unifesp.br/agendamento-de-doacao/" target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hospital São Paulo – Banco de Sangue')">
                     <h3>Hospital São Paulo – Banco de Sangue</h3>
                     <p>Endereço: R. Napoleão de Barros, 715 – Vila Clementino, São Paulo - SP</p>
-                    <p>Número: (11) 5576-4000</p>
-                    <a class="btn-agendar" href="https://www.hospitalsaopaulo.org.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 5576-4000</p> <a class="btn-agendar" href="https://www.hospitalsaopaulo.org.br" target="_blank">Agendar Doação</a>
                 </div>
-
                 <div class="card" onclick="selecionar(this, 'Hospital Sírio-Libanês – Banco de Sangue')">
                     <h3>Hospital Sírio-Libanês – Banco de Sangue</h3>
                     <p>Endereço: R. Dona Adma Jafet, 91 – Bela Vista, São Paulo - SP</p>
-                    <p>Número: (11) 3394-0200</p>
-                    <a class="btn-agendar" href="https://www.hsl.org.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 3394-0200</p> <a class="btn-agendar" href="https://www.hsl.org.br" target="_blank">Agendar Doação</a>
                 </div>
-
                 <div class="card" onclick="selecionar(this, 'Hospital Israelita Albert Einstein – Banco de Sangue')">
                     <h3>Hospital Israelita Albert Einstein – Banco de Sangue</h3>
                     <p>Endereço: Av. Albert Einstein, 627 – Morumbi, São Paulo - SP</p>
-                    <p>Número: (11) 2151-1233</p>
-                    <a class="btn-agendar" href="https://www.einstein.br/doar-sangue" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 2151-1233</p> <a class="btn-agendar" href="https://www.einstein.br/doar-sangue" target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hospital das Clínicas – Banco de Sangue')">
                     <h3>Hospital das Clínicas – Banco de Sangue</h3>
                     <p>Endereço: Av. Dr. Enéas Carvalho de Aguiar, 255 – Cerqueira César, São Paulo - SP</p>
-                    <p>Número: (11) 2661-0000</p>
-                    <a class="btn-agendar" href="https://www.hc.fm.usp.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 2661-0000</p> <a class="btn-agendar" href="https://www.hc.fm.usp.br" target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hospital do Servidor Público Estadual – Banco de Sangue')">
                     <h3>Hospital do Servidor Público Estadual – Banco de Sangue</h3>
                     <p>Endereço: Av. Ibirapuera, 981 – Indianópolis, São Paulo - SP</p>
-                    <p>Número: (11) 4573-8000</p>
-                    <a class="btn-agendar" href="https://www.iamspe.sp.gov.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 4573-8000</p> <a class="btn-agendar" href="https://www.iamspe.sp.gov.br" target="_blank">Agendar Doação</a>
                 </div>
 
-                <div class="card" onclick="selecionar(this, 'Hospital Santa Casa de São Paulo – Banco de Sangue,R. Dr. Cesário Mota Júnior, 112 – Vila Buarque, São Paulo - SP')">
+                <div class="card"
+                    onclick="selecionar(this, 'Hospital Santa Casa de São Paulo – Banco de Sangue,R. Dr. Cesário Mota Júnior, 112 – Vila Buarque, São Paulo - SP')">
                     <h3>Hospital Santa Casa de São Paulo – Banco de Sangue</h3>
                     <p>Endereço: R. Dr. Cesário Mota Júnior, 112 – Vila Buarque, São Paulo - SP</p>
-                    <p>Número: (11) 2176-7000</p>
-                    <a class="btn-agendar" href="https://www.santacasasp.org.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 2176-7000</p> <a class="btn-agendar" href="https://www.santacasasp.org.br" target="_blank">Agendar Doação</a>
                 </div>
 
-                <div class="card" onclick="selecionar(this, 'Hospital São Camilo – Banco de Sangue (Pompeia), R. Pompeia, 1178 – Pompeia, São Paulo - SP')">
+                <div class="card"
+                    onclick="selecionar(this, 'Hospital São Camilo – Banco de Sangue (Pompeia), R. Pompeia, 1178 – Pompeia, São Paulo - SP')">
                     <h3>Hospital São Camilo – Banco de Sangue (Pompeia)</h3>
                     <p>Endereço: R. Pompeia, 1178 – Pompeia, São Paulo - SP</p>
-                    <p>Número: (11) 3677-4444</p>
-                    <a class="btn-agendar" href="https://www.saocamilo-sp.br" target="_blank">Agendar Doação</a>
+                    <p>Número: (11) 3677-4444</p> <a class="btn-agendar" href="https://www.saocamilo-sp.br" target="_blank">Agendar Doação</a>
                 </div>
 
                 <div class="card" onclick="selecionar(this, 'Hospital Alemão Oswaldo Cruz – Banco de Sangue')">
                     <h3>Hospital Alemão Oswaldo Cruz – Banco de Sangue</h3>
                     <p>Endereço: R. Treze de Maio, 1815 – Bela Vista, São Paulo - SP</p>
-                    <p>Número: (11) 3549-0000</p>
-                    <a class="btn-agendar" href="https://www.hospitaloswaldocruz.org.br" target="_blank">Agendar
-                        Doação</a>
+                    <p>Número: (11) 3549-0000</p> <a class="btn-agendar" href="https://www.hospitaloswaldocruz.org.br" target="_blank">Agendar Doação</a>
                 </div>
-                <div class="card" onclick="selecionar(this, 'Rua Los Angeles, Jardim california')">
-                    <h3>Hospital ITAQUAQUESECUIDE</h3>
-                    <p>Endereço: R. Treze de Maio, 1815 – Bela Vista, São Paulo - SP</p>
-                    <p>Número: (11) 3549-0000</p>
-                    <a class="btn-agendar" href="https://www.hospitaloswaldocruz.org.br" target="_blank">Agendar
-                        Doação</a>
-                </div>
-
             </div>
             <div class="mapa">
                 <iframe id="mapaFrame" src="https://maps.google.com/maps?q=São+Paulo&output=embed">
@@ -195,63 +172,65 @@
             </div>
 
         </div>
+
     </main>
 
-        <footer>
-         <div class="footer-top">
-    <div class="container footer-content">
+    <footer>
 
-      <div class="footer-left">
-        <div class="logo-title">
-          <img src="./imagens/logomarca.png" alt="logo">
-        
-        <h2>Gotas de Vida</h2>
+        <div class="footer-top">
+            <div class="container footer-content">
+
+                <div class="footer-left">
+                    <div class="logo-title">
+                        <img src="./imagens/logomarca.png">
+                        <h2>Gotas de Vida</h2>
+                    </div>
+
+                    <p>
+                        Conectando doadores a hemocentros através da tecnologia.
+                    </p>
+
+                    <div class="instagram">
+                        <img src="./imagens/instagram-icon.png">
+                        <div>
+                            <span>Instagram</span>
+                            <p>@GotasDeVida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <h3>Navegação</h3>
+
+                    <div class="footer-links">
+                        <div>
+                            <a href="./index.html">Início</a>
+                            <a href="./pqdoar.html">Por que doar</a>
+                            <a href="./comodoar.html">Como doar</a>
+                        </div>
+
+                        <div>
+                            <a href="./Sobre.html">Sobre</a>
+                            <a href="./cuidados.html">Cuidados</a>
+                            <a href="./hemocentros.html">Hemocentros</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <p>
-          Conectando doadores a hemocentros através da tecnologia.
-          Juntos, salvamos vidas e construímos um futuro mais solidário.
-        </p>
 
-        <div class="instagram">
-            <img src="./imagens/instagram-icon.png" alt="instagram">
-
-            <div>
-          <span>Instagram</span>
-          <p>@GotasDeVida</p>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© 2026 Gotas de Vida. Todos os direitos reservados.</p>
+                <p>Doar sangue é um ato de amor. Cada gota conta.</p>
+            </div>
         </div>
-      </div>
-      </div>
-      
-
-      <div class="footer-right">
-        <h3>Navegação</h3>
-
-        <div class="footer-links">
-          <div>
-            <a href="./index.html">Início</a>
-            <a href="./pqdoar.html">Por que doar</a>
-            <a href="./comodoar.html">Como doar</a>
-          </div>
-
-          <div>
-            <a href="./Sobre.html">Sobre</a>
-            <a href="./cuidados.html">Cuidados</a>
-            <a href="./hemocentros.html">Hemocentros</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <div class="container footer-bottom-content">
-      <p>© 2026 Gotas de Vida. Todos os direitos reservados.</p>
-      <p>Doar sangue é um ato de amor. Cada gota conta.</p>
-    </div>
-  </div>
 
     </footer>
+
     <script src="hemocentros.js"></script>
+
 </body>
+
 </html>

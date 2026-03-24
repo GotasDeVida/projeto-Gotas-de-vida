@@ -22,9 +22,9 @@ function calcular() {
     const data = new Date(dataInput);
     const proxima = new Date(data);
 
-    if (usuario.sexo === "Mas") {
+    if (usuario.sexo === "Masculino") {
         proxima.setMonth(proxima.getMonth() + 2);
-    } else if (usuario.sexo === "Fem") {
+    } else if (usuario.sexo === "Feminino") {
         proxima.setMonth(proxima.getMonth() + 3);
     }
 
