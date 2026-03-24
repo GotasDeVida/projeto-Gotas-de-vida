@@ -45,6 +45,10 @@
     background-color: #a00000;
 }
 
+#resultado {
+    margin-top: 20px;
+}
+
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
@@ -78,8 +82,7 @@
     }
 }
 
-
-/* ================= TABLET ================= */
+/* ================= (1024px) ================= */
 @media (max-width: 1024px) {
 
     .container-area {

@@ -32,9 +32,6 @@ body {
     align-items: flex-end;
 }
 
-
-/* ================= HERO ================= */
-
 .hero {
     position: relative;
     height: 350px; 
@@ -44,8 +41,6 @@ body {
     text-align: center;
 }
 
-
-/* etiqueta esquerda */
 .plata {
     position: absolute;
     top: 40px;
@@ -62,7 +57,6 @@ body {
     margin: 0 auto;
 }
 
-
 .hero h1 {
     font-size: 48px;
     margin-bottom: 12px;
@@ -77,8 +71,6 @@ body {
     font-size: 18px;
     line-height: 1.5;
 }
-
-/* ================= CARDS ================= */
 
 .container-cards {
     padding: 40px 100px;
@@ -148,4 +140,54 @@ body {
 
 .green {
     background: #CFFFC9;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .plata {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .container-cards {
+        flex-direction: column; 
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .column-group {
+        width: 100%; 
+        align-items: center;
+    }
+
+    .right-group {
+        align-items: center; 
+    }
+
+    .grid-half {
+        grid-template-columns: 1fr; 
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .label-box {
+        align-self: center;
+    }
 }

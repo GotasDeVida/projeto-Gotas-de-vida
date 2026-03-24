@@ -72,8 +72,8 @@ section {
 
 .card-verde {
     background-color: #DFF5E1;
-    justify-content: flex-start; /* 👈 volta pro topo */
-    align-items: center; /* 👈 centraliza horizontal só */
+    justify-content: flex-start; 
+    align-items: center; 
     padding-top: 20px;
     text-align: center;
 }
@@ -233,7 +233,7 @@ section:nth-of-type(3) .container {
 }
 
 
-/* ================= TABLET ================= */
+/* ================= (1024px) ================= */
 @media (max-width: 1024px) {
 
     .container {
