@@ -72,3 +72,68 @@
     width: 50px;
     height: auto;
 }
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .sobre {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .container h2 {
+        font-size: 32px;
+        padding: 0 10px;
+    }
+
+    .container p {
+        font-size: 16px;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+        padding: 25px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+    .container h2 {
+        font-size: 42px;
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+
+    .cards {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 250px;
+    }
+}

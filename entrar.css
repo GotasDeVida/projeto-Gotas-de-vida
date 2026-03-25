@@ -90,3 +90,76 @@
     border: 1px solid #DA0707;
     background-color: rgba(217, 217, 217, 0.4);
 }
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .login-area {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .imagemdagota img {
+        width: 200px;
+    }
+
+    .content-login {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .content-login-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content-login-box h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .content-login-box p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .inputs {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-enter {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .content-login-box a {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .plata {
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        width: fit-content;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+    .login-area {
+        gap: 50px;
+    }
+
+    .imagemdagota img {
+        width: 300px;
+    }
+
+    .content-login {
+        width: 300px;
+    }
+}
