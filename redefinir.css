@@ -1,0 +1,85 @@
+.btn-enter {
+    background-color: #c62828;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+}
+
+.btn-enter:hover {
+    transform: translateY(-3px) scale(1.03);
+    background-color: #e53935;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn-enter:active {
+    transform: scale(0.98);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .login-area {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content-login {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-login-box {
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .inputs {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

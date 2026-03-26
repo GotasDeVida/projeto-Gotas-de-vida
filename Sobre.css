@@ -47,6 +47,12 @@
     width: 290px;
     text-align: center;
     margin-bottom: 30px;
+
+        transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
 }
 
 .card h3{
@@ -70,6 +76,8 @@
     width: 50px;
     height: auto;
 }
+
+
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {

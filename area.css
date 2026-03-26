@@ -33,16 +33,25 @@
 .card-area button {
     width: 100%;
     padding: 12px;
-    background-color: #c40000;
+    background-color: #da0707;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+
+    transition: all 0.3s ease;
 }
 
+
 .card-area button:hover {
-    background-color: #a00000;
+    background-color: #c00707;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card-area button:active {
+    transform: scale(0.97);
 }
 
 #resultado {
