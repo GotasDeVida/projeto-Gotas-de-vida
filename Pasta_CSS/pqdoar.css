@@ -1,25 +1,3 @@
-main{
-    background-color: white;
-    
-}
-
-main{
-    background-color: white;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 100px;
-}
-
-.plata{
-    color: #DA0707;
-    background-color: #FEEAEA;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
 .container-titulo {
     display: flex;
     justify-content: center;
