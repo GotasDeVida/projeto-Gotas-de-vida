@@ -2,109 +2,149 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do Usuário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Usuário</title>
 
-    <link rel="stylesheet" href="./Pasta_CSS/style.css">
-    <link rel="stylesheet" href="./Pasta_CSS/area.css">
-    <link rel="shortcut icon" href="./Imagem/favicon-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./Pasta_CSS/style.css">
+  <link rel="stylesheet" href="./Pasta_CSS/area.css">
+  <link rel="shortcut icon" href="./Imagem/favicon-logo.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo-area">
+  <header>
+    <div class="logo-area">
+      <img src="./Imagem/logomarca.png" alt="logo">
+
+      <div>
+        <h1>Gotas de Vida</h1>
+        <h3>Doe Sangue, Salve vidas</h3>
+      </div>
+    </div>
+
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./sobre.html">Sobre</a>
+      <a href="./pqdoar.html">Por que doar</a>
+      <a href="./cuidados.html">Cuidados</a>
+      <a href="./comodoar.html">Como doar</a>
+      <a href="./hemocentros.html">Hemocentros</a>
+      <a href="./entrar.html" id="btn-entrar">Entrar</a>
+            <div id="usuario-logado" style="display:none;">
+                <span id="nome-usuario"></span>
+                <span id="logout">(Sair)</span>
+            </div>
+
+    </nav>
+  </header>
+
+  <main class="container-area">
+    <section>
+      <div class="card-area">
+        <h2 id="bemVindo"></h2>
+
+        <p>Descubra quando você poderá doar novamente</p>
+
+        <label>Data da última doação:</label>
+        <input type="date" id="dataDoacao">
+
+        <button onclick="calcular()">Calcular próxima doação</button>
+
+        <p id="resultado"></p>
+      </div>
+    </section>
+    <!-- PLANOS -->
+    <section class="planos-area">
+
+      <h2 class="titulo-planos">Escolha seu plano</h2>
+
+      <div class="planos-container">
+
+        <!-- FREE -->
+        <div class="card-plano">
+          <h3>Plano Free</h3>
+          <p class="descricao">Acesso básico ao site, Recurso de calcular sobre quando deve doar novamente</p>
+          <p class="preco">Grátis</p>
+          <button>Assinar</button>
+        </div>
+
+        <!-- PLUS -->
+        <div class="card-plano destaque">
+          <h3>Plano Plus</h3>
+          <p class="descricao">Acesso básico ao site, <br> Versão voltada para anunciar com a gente sua pesquisa no site </p>
+          <p class="preco">R$ 1,99 / mês</p>
+          <button>Assinar</button>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="card-plano">
+          <h3>Plano Premium</h3>
+          <p class="descricao">Todos os recursos liberados, Suporte prioritário, Funcionalidades avançadas para acompanhamento clínico</p>
+          <p class="preco">R$ 5,99 / mês</p>
+          <button>Assinar</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="container footer-content">
+
+        <div class="footer-left">
+          <div class="logo-title">
             <img src="./Imagem/logomarca.png" alt="logo">
 
-            <div>
-                <h1>Gotas de Vida</h1>
-                <h3>Doe Sangue, Salve vidas</h3>
-            </div>
-        </div>
+            <h2>Gotas de Vida</h2>
+          </div>
+          <p>
+            Conectando doadores a hemocentros através da tecnologia.
+            Juntos, salvamos vidas e construímos um futuro mais solidário.
+          </p>
 
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./sobre.html">Sobre</a>
-            <a href="./pqdoar.html">Por que doar</a>
-            <a href="./cuidados.html">Cuidados</a>
-            <a href="./comodoar.html">Como doar</a>
-            <a href="./hemocentros.html">Hemocentros</a>
-            <a href="./entrar.html" id="btn-entrar"> Entrar </a>
-        </nav>
-    </header>
-
-    <main class="container-area">
-
-        <div class="card-area">
-            <h2 id="bemVindo"></h2>
-
-            <p>Descubra quando você poderá doar novamente</p>
-
-            <label>Data da última doação:</label>
-            <input type="date" id="dataDoacao">
-
-            <button onclick="calcular()">Calcular próxima doação</button>
-
-            <p id="resultado"></p>
-        </div>
-    </main>
-
-        <footer>
-        <div class="footer-top">
-    <div class="container footer-content">
-
-      <div class="footer-left">
-        <div class="logo-title">
-          <img src="./Imagem/logomarca.png" alt="logo">
-        
-        <h2>Gotas de Vida</h2>
-        </div>
-        <p>
-          Conectando doadores a hemocentros através da tecnologia.
-          Juntos, salvamos vidas e construímos um futuro mais solidário.
-        </p>
-
-        <div class="instagram">
+          <div class="instagram">
             <img src="./Imagem/instagram-icon.png" alt="instagram">
 
             <div>
-          <span>Instagram</span>
-          <p>@GotasDeVida</p>
-        </div>
-      </div>
-      </div>
-      
-
-      <div class="footer-right">
-        <h3>Navegação</h3>
-
-        <div class="footer-links">
-          <div>
-            <a href="./index.html">Início</a>
-            <a href="./pqdoar.html">Por que doar</a>
-            <a href="./comodoar.html">Como doar</a>
-          </div>
-
-          <div>
-            <a href="./sobre.html">Sobre</a>
-            <a href="./cuidados.html">Cuidados</a>
-            <a href="./hemocentros.html">Hemocentros</a>
+              <span>Instagram</span>
+              <p>@GotasDeVida</p>
+            </div>
           </div>
         </div>
+
+
+        <div class="footer-right">
+          <h3>Navegação</h3>
+
+          <div class="footer-links">
+            <div>
+              <a href="./index.html">Início</a>
+              <a href="./pqdoar.html">Por que doar</a>
+              <a href="./comodoar.html">Como doar</a>
+            </div>
+
+            <div>
+              <a href="./sobre.html">Sobre</a>
+              <a href="./cuidados.html">Cuidados</a>
+              <a href="./hemocentros.html">Hemocentros</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="container footer-bottom-content">
-      <p>© 2026 Gotas de Vida. Todos os direitos reservados.</p>
-      <p>Doar sangue é um ato de amor. Cada gota conta.</p>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 Gotas de Vida. Todos os direitos reservados.</p>
+        <p>Doar sangue é um ato de amor. Cada gota conta.</p>
+      </div>
     </div>
-  </div>
-    </footer>
-<!-- VLIBRAS -->
+  </footer>
+  <!-- VLIBRAS -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -116,7 +156,9 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-    <script src="./Pasta_JS/area.js"></script>
+  <script src="./Pasta_JS/area.js"></script>
+  <script src="./Pasta_JS/nome.js"></script>
+
 </body>
 
 </html>

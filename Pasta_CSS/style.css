@@ -62,12 +62,6 @@ body {
     overflow-x: hidden;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container {
     width: 100%;
     max-width: 1600px;
@@ -297,6 +291,23 @@ button:last-child:hover {
     padding-left: 1px !important;
     padding-right: 40px;
 }
+
+#usuario-logado {
+    font-weight: 600;
+    color: #da0707;
+}
+
+#logout {
+    color: #555;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+#logout:hover {
+    color: #da0707;
+}
+
 
 .footer-top {
     background-color: #892e2f;
