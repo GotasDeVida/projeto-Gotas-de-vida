@@ -403,6 +403,27 @@ button:last-child:hover {
 
 }
 
+.linktr{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+.linktree {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.linktree div {
+    display: flex;
+    flex-direction: column;
+}
+
+.linktree img {
+    width: 50px;
+    height: 50px;
+}
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 

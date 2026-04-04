@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body{
+    background-color: rgb(245, 242, 230);
+    background-image: url(/FUNDO.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: black 3px solid;
+    box-shadow: rgba(0,0,0, 0.25) 0px 4px 4px;
+}
+
+.cabecalho h1 {
+    font-size: 20px;
+}
+
+.cabecalho p{
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.btns a {
+    display: flex;
+    width: 235px;
+    color: black;
+    background-color: rgb(255, 143, 143);
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    border: black solid 1px;
+    text-decoration: none;
+    box-shadow: black 5px 5px 0;
+}
+
+.btns button{
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btns-membros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.btns-membros a {
+    display: flex;
+    width: 235px;
+    color: black;
+    background-color: rgb(255, 143, 143);
+    justify-content: center;
+    padding: 16px;
+    border-radius: 100px;
+    border: black solid 1px;
+    text-decoration: none;
+    box-shadow: black 5px 5px 0
+}
+
+.btns-membros button{
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns a:hover{
+    background-color: rgb(255, 68, 68);
+}
+
+.btns-membros a:hover{
+    background-color: rgb(255, 68, 68);
+}
+
+footer{
+    margin-top: 40px;
+}
+
