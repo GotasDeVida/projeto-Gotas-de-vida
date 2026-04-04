@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14.32,100.900;1,14.32,100.900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ================= .container-comodoar DOS PASSOS ================= */
 
-.container {
+.container-comodoar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -9,12 +10,7 @@
     margin: 40px 0;
 }
 
-.container:nth-of-type(3) {
-    grid-template-columns: repeat(2, 300px);
-    justify-content: center;
-}
-
-.container-box {
+.container-comodoar-box {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -26,7 +22,7 @@ section {
 }
 
 .box {
-    width: 300px; 
+    width: 300px;
     position: relative;
 }
 
@@ -42,18 +38,17 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     font-weight: bold;
     font-size: 14px;
     color: white !important;
 }
 
-
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
     padding: 30px 20px 20px;
 
@@ -61,27 +56,26 @@ section {
     min-height: 160px;
 }
 
-
 .card-amarelo {
     background-color: #FFF4CC;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding-top: 20px;
 }
 
 .card-amarelo p {
-    margin: 2px 0; 
+    margin: 2px 0;
     line-height: 1.3;
 }
 
 .card-verde {
     background-color: #DFF5E1;
-    justify-content: flex-start; 
-    align-items: center; 
+    justify-content: flex-start;
+    align-items: center;
     padding-top: 20px;
     text-align: center;
 }
 
-.p-verde span{
+.p-verde span {
     color: rgb(33, 97, 33);
 }
 
@@ -140,13 +134,13 @@ section {
     text-decoration: none;
     font-weight: 500;
 
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .btn-doar:hover {
-    background-color: #f5f5f5; 
+    background-color: #f5f5f5;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 main h4 {
@@ -161,12 +155,14 @@ main h4 {
     margin-top: 20px;
 }
 
-section:nth-of-type(3) .container {
+/* terceira section com 2 cards */
+section:nth-of-type(3) .container-comodoar {
     grid-template-columns: repeat(2, 300px);
     justify-content: center;
 }
 
 /* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
 
     .titulo {
@@ -186,7 +182,7 @@ section:nth-of-type(3) .container {
         width: fit-content;
     }
 
-    .container {
+    .container-comodoar {
         grid-template-columns: 1fr !important;
         gap: 20px;
         margin: 20px 0;
@@ -212,7 +208,7 @@ section:nth-of-type(3) .container {
         font-size: 12px;
     }
 
-    section:nth-of-type(3) .container {
+    section:nth-of-type(3) .container-comodoar {
         grid-template-columns: 1fr !important;
     }
 
@@ -235,16 +231,16 @@ section:nth-of-type(3) .container {
     }
 }
 
-
 /* ================= (1024px) ================= */
+
 @media (max-width: 1024px) {
 
-    .container {
+    .container-comodoar {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 
-    section:nth-of-type(3) .container {
+    section:nth-of-type(3) .container-comodoar {
         grid-template-columns: repeat(2, 1fr);
     }
 

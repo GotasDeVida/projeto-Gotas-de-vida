@@ -64,7 +64,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-left: 1px !important;
     padding-right: 40px;
@@ -284,13 +284,7 @@ button:last-child:hover {
     color: #DA0707;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 1px !important;
-    padding-right: 40px;
-}
+
 
 #usuario-logado {
     font-weight: 600;
