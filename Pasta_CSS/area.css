@@ -2,7 +2,7 @@
 
 .container-area {
     display: flex;
-    flex-direction: column; /* ⭐ ISSO RESOLVE */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -34,6 +34,8 @@
     border: 1px solid #ccc;
 }
 
+
+
 .card-area button {
     width: 100%;
     padding: 12px;
@@ -46,6 +48,7 @@
 
     transition: all 0.3s ease;
 }
+
 
 
 .card-area button:hover {
@@ -128,6 +131,16 @@
 
 .card-plano button:hover {
     background-color: #c00707;
+}
+.red-free {
+    background-color: #8B0000 !important;
+}
+
+.red-free:hover {
+    background-color: #8B0000 !important;
+    transform: none !important;
+    box-shadow: none !important;
+    cursor: default !important;
 }
 
 .destaque {
